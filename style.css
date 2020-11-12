@@ -1,0 +1,109 @@
+body{
+    width:100%;
+    margin:auto;}
+.container{
+
+    display: grid;
+  /*  border-width:1px;
+    border-style:dashed;
+    border-color: red;*/
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    /*grid-gap: 15px 15px;*/
+    grid-template-areas:"nav nav"
+                        "header header"                        
+                         "article aside"
+                         "footer footer";
+    grid-auto-columns: 1px; 
+    grid-auto-rows:
+    
+
+}
+.item1,.item2, .accueil, .foot{
+  /*  border-width:1px;
+    border-style:dashed;
+    border-color: blue;
+    /* ce background color sers juste a visualiser que les elements
+    fonctionnent bien avec les attribut de la methode GRID*/
+
+}
+
+.accueil{grid-area:header;}
+.item0{grid-area: nav;}
+.item1{grid-area:article;}
+.item2{grid-area:aside;}
+.foot{grid-area:footer;}
+
+.seed-of-destruction, .hellboy-birth, .hellboy-2004, .hellboy-2019, .jahad,.tom1,.tom2,.tom3,.mignola, .in-hell1,.in-hell2,.hellboy-origin{
+    width:150px;
+    height: auto;
+}
+.navigation{
+    text-align: center;
+ /*   border: 1px dashed red;*/
+    background-color: #d9dddc;}
+.item2{padding-left: 20px;padding-right: 20px;padding-top:50px;background-color:#e9ebea;}
+a{
+    text-decoration: none;
+    color: #fff;
+  /*  border: 1px dashed yellow;*/}
+.a{
+    font-size: 20px;
+    margin:0px;
+    outline:0px;
+    padding: 25px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.a:hover{background-color: #812B19;}
+.navigation{grid-column:1/-1;color:white;background-color: #43180D  ; }
+.accueil{grid-column:3/-3;}
+.papier-peint{
+    box-sizing:border-box;
+    width:100%;}
+
+.item2-3,.item2-2,.principal-personnages{ padding:20px; margin:auto; background-color: #fff;border-radius:5px;box-shadow: 0px 0px 10px #4a4b4b; padding: 30px; }
+.item1{ padding-left: 150px;padding-right:150px; padding-top:50px; padding-bottom:100px;margin:auto; background-color:#e9ebea;}
+
+.foot{
+    color:white;
+    height: 80px;
+    background-color: #43180D  ;}
+p{
+    text-align: justify;
+}
+.a-h1,.a-h2,.a-h3,.a-h4{
+    margin:auto;}
+
+.a-h1{font-size: 50px;color:#812B19;}
+.a-h2{font-size:40px;color:#812B19;}
+.a-h3{font-size:30px;color:#812B19;}
+.a-h4{font-size:25px;color:#812B19;}
+
+#principal-origine,#principal-adaptations,#principal-references{border-radius: 5px;box-shadow: 0px 0px 10px #4a4b4b; border-width: 0.5px;}
+
+
+div{
+    border-collapse: separate;
+}
+#principal-origine,#principal-references, #principal-adaptations{
+    padding: 50px;background-color: #fff;}
+.ah{font-size: 18px;}
+
+.logo{width:100px; height:auto;/*border: 0.5px dashed white;*/ display:inline; float:left;}
+.navigation{float:top;}
+/*.a-h1-1{font-size:30px;color:white;}
+.a-p{font-size:19px;color:white;}
+*/
+@font-face{font-family:"red-right-hand"; src:url(font/Red-Right-Hand.ttf);}
+
+p,a,li{font-family:Arial, Helvetica, sans-serif}
+
+h1,h2,h3,h4{font-family: "red-right-hand",Arial, Helvetica, sans-serif; font-weight:bold; text-transform: uppercase;}
+
+.a-h{color:#812B19}
+
+.p-foot{margin: auto;}
+
+span{font-style:italic ;}
